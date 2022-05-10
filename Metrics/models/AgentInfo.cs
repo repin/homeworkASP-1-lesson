@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Metrics.models
+namespace MetricsAgent.models
 {
     public class AgentInfo
     {

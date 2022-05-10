@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Metrics.models
+namespace MetricsAgent.models
 {
     public class AgentPool
     {

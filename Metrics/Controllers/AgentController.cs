@@ -1,9 +1,9 @@
-﻿using Metrics.models;
+﻿using MetricsAgent.models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace Metrics.Controllers
+namespace MetricsAgent.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

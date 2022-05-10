@@ -9,13 +9,13 @@ using Xunit;
 
 namespace MetricsTest
 {
-    public class DotNetMetricsTest
+    public class HddMetricsTest
     {
-        private DotNetMetricsController _dotNetMetricsController;
+        private HddMetricsController _hddMetricsController;
 
-        public DotNetMetricsTest()
+        public HddMetricsTest()
         {
-            _dotNetMetricsController = new DotNetMetricsController();
+            _hddMetricsController = new HddMetricsController();
         }
 
         [Fact]
@@ -24,7 +24,7 @@ namespace MetricsTest
             int idAgent = 1;
             TimeSpan fromTime = TimeSpan.FromSeconds(0);
             TimeSpan toTime = TimeSpan.FromSeconds(100);
-            IActionResult result = _dotNetMetricsController.GetMetricFromAgent(idAgent, fromTime, toTime);
+            IActionResult result = _hddMetricsController.GetMetricFromAgent(idAgent, fromTime, toTime);
 
             Assert.IsAssignableFrom<IActionResult>(result);
         }
@@ -33,7 +33,7 @@ namespace MetricsTest
         {
             TimeSpan fromTime=TimeSpan.FromSeconds(0);
             TimeSpan toTime = TimeSpan.FromSeconds(100);
-            IActionResult result = _dotNetMetricsController.GetMetricAllCluster(fromTime, toTime);
+            IActionResult result = _hddMetricsController.GetMetricAllCluster(fromTime, toTime);
 
             Assert.IsAssignableFrom<IActionResult> (result);
         }

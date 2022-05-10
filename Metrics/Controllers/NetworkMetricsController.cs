@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace Metrics.Controllers
+namespace MetricsAgent.Controllers
 {
     [Route("api/metrics/network")]
     [ApiController]

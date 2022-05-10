@@ -1,5 +1,5 @@
-using Metrics.Controllers;
-using Metrics.models;
+using MetricsAgent.Controllers;
+using MetricsAgent.models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Xunit;
